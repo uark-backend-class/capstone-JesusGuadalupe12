@@ -2,9 +2,11 @@ const router = require("express").Router();
 const member = require("../controllers/member.controller");
 
 // Welcoming page and prompts question
-router.get("/", member.greetPage);
+router.get("/", member.questionPage);
 
-// Responses submission confirmation page
-router.get("/submission", member.submissionPage);
+// Responses submitted confirmation page
+router.get("/submitted", member.submittedPage);
+
+router.post("/memberResponse", member.memberResponse);
 
 module.exports = router;
