@@ -1,3 +1,4 @@
+const { count } = require("../models/Member");
 const Member = require("../models/Member");
 
 exports.questionPage = (req, res) => {
@@ -20,3 +21,10 @@ exports.memberResponse = async (req, res) => {
 
     res.redirect("/submitted")
 }
+
+exports.resultsPage = async (req, res) => {   
+    const pineappleNo = await (await Member.find({responseA:"0"})).length;
+    const pineappleYes = await (await Member.find({responseA:"1"})).length;
+
+    res.render("results", {title: "Here are the results!", pineappleNo, pineappleYes});
+};

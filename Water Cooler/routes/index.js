@@ -9,4 +9,6 @@ router.get("/submitted", member.submittedPage);
 
 router.post("/memberResponse", member.memberResponse);
 
+router.get("/results", member.resultsPage);
+
 module.exports = router;
