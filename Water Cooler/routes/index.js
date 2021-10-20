@@ -1,14 +1,14 @@
 const router = require("express").Router();
-const member = require("../controllers/member.controller");
+const respondent = require("../controllers/respondent.controller");
 
 // Welcoming page and prompts question
-router.get("/", member.questionPage);
+router.get("/", respondent.questionPage);
 
 // Responses submitted confirmation page
-router.get("/submitted", member.submittedPage);
+router.get("/submitted", respondent.submittedPage);
 
-router.post("/memberResponse", member.memberResponse);
+router.post("/respondentResponse", respondent.respondentResponse);
 
-router.get("/results", member.resultsPage);
+router.get("/results", respondent.resultsPage);
 
 module.exports = router;
