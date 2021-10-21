@@ -1,6 +1,6 @@
 <h1>{{ title }}</h1>
 
-<form action="/respondentResponse" method="POST">
+<form action="/response" method="POST">
     First Name: <input type="text" name="firstName" required/>
     <br>
     Last Name: <input type="text" name="lastName" required/>
@@ -9,10 +9,10 @@
     <br>
 
 <p>Is pineapple a legitimate pizza topping?</p>
-    <input type = "radio", id = "0" name = "responseA" value = "0" required/>
+    <input type = "radio", id = "0" name = "response" value = "0" required/>
     <label for = "I'd rather not"> I'd rather not </label>
     <br>
-    <input type = "radio", id = "1" name = "responseA" value = "1" required/> 
+    <input type = "radio", id = "1" name = "response" value = "1" required/> 
     <label for = "It's delicious on pizza!"> It's delicious on pizza! </label>
     <br>
     <button type="submit">Submit</button>

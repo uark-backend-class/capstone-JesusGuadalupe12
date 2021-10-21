@@ -7,7 +7,7 @@ router.get("/", respondent.questionPage);
 // Responses submitted confirmation page
 router.get("/submitted", respondent.submittedPage);
 
-router.post("/respondentResponse", respondent.respondentResponse);
+router.post("/response", respondent.response);
 
 router.get("/results", respondent.resultsPage);
 

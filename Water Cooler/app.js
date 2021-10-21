@@ -1,6 +1,7 @@
 const express = require("express");
 const routes = require("./routes");
 const exphbs = require("express-handlebars");
+const email = require("./email")
 require("./db");
 
 const app = express();

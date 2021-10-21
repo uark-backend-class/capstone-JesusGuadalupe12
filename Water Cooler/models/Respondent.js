@@ -9,6 +9,6 @@ const respondentSchema = mongoose.Schema({
 });
 
 // Create a model based on the schema and export it
-const respondent = mongoose.model("respondent", respondentSchema);
+const Respondent = mongoose.model("respondent", respondentSchema);
 
-module.exports = respondent;
+module.exports = Respondent;
