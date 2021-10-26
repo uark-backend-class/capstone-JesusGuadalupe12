@@ -1,19 +1,31 @@
-<h1>{{ title }}</h1>
 
-<form action="/response" method="POST">
-    First Name: <input type="text" name="firstName" required/>
-    <br>
-    Last Name: <input type="text" name="lastName" required/>
-    <br>
-    Email: <input type="email" name="email" required/>
-    <br>
+<html>
+    <div class="box">
+    <head>
+        <h1> {{ title }} </h1>
+    </head>
+    <body>
+    <p>The official website to keep count of those who love or hate pineapples on pizza. There is no in between.</p>
 
-<p>Is pineapple a legitimate pizza topping?</p>
-    <input type = "radio", id = "0" name = "response" value = "0" required/>
-    <label for = "I'd rather not"> I'd rather not </label>
-    <br>
-    <input type = "radio", id = "1" name = "response" value = "1" required/> 
-    <label for = "It's delicious on pizza!"> It's delicious on pizza! </label>
-    <br>
-    <button type="submit">Submit</button>
-</form>
+    <form action="/response" method="POST">
+        <div class ="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" name="firstName" placeholder="First Name" /><br>    
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" name="lastName" placeholder="Last Name" /><br>
+            <label for="Email">Email</label>
+            <input type="email" class = "form-control" name="email" placeholder="Email" />
+            <span id="helpBlock" class="help-block">*None of these fields are required, but you can receive the results in your inbox if you would like.</span>
+            <br>
+            <legend class="text-center" class="w-auto"><strong>Does pineapple go on pizza?</strong></legend>
+            <center><input type = "radio", id = "0" name = "response" value = "0" required/>
+            <label for = "Absolutely not!"> Absolutely not!</label><br>
+            <input type = "radio", id = "1" name = "response" value = "1" required/> 
+            <label for = "It's delicious on pizza!"> It's delicious on pizza! </label><br>
+            <br></center>
+            <center><button class="btn btn-success btn-lg"type="submit">Submit</button></center>
+        </div>
+    </form>
+    </body>
+    </div>
+</html>

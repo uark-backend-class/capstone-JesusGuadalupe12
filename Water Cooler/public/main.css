@@ -1,0 +1,80 @@
+h1{
+    text-align: center;
+    width: 100%;
+    margin:auto;
+}
+
+p{
+    text-align: center;
+    width: 100%;
+    margin:auto;
+}
+
+
+.box {
+    height:auto;
+    width: auto;
+    padding-top:15px;
+    padding-bottom: 30px;
+    border-radius: 25px;
+    background-color: rgba(221,221,221,.25);
+}
+
+.share-btn-container{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0, 4px, 8px, rgba(0,0,0,0.3);
+    position: fixed;
+    top:25%;
+}
+
+.share-btn-container {
+    margin: 12px 0;
+}
+
+.share-btn-container a i{
+    font-size:32px;
+}
+
+.share-btn-container a:hover{
+    transform: scale(1.2);
+}
+
+.share-btn-container a{
+    margin: 12px 0;
+}
+.share-btn-container .fa-facebook{
+    color: #3b5998;
+}
+
+.share-btn-container .fa-twitter{
+    color: #1da1f2;
+}
+
+.share-btn-container .fa-reddit{
+    color: #ff4500;
+}
+
+@media (max-width:550px){
+    .contnet{
+        padding:8px 32px;
+    }
+    .share-btn-container{
+        transform: unset;
+        top: unset;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        flex-direction: row;
+        padding: 16px;
+        box-shadow: 4, 0px, 8px, rgba(0,0,0,0.3);
+        padding: 16px 0;
+        justify-content: center;
+    }
+
+    .share-btn-container a {
+        margin: 0 32px;
+    }
+}

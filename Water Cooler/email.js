@@ -12,7 +12,7 @@ let transport = nodemailer.createTransport({
 exports.send = (to) => {
     return transport.sendMail({
         to,
-        html: '<h1>Thanks again for contributing to this great debate! Click <a href="http://localhost:3000/results">here</a> to see what others think!</h1>',
+        html: '<center><h1>Hey there!</h1><br><p1>Thanks again for contributing to this great debate! Click <a href="http://localhost:3000/results">here</a> to see what others think!</p1></center>',
         subject: "The Results Are In!",
         from: "results@pineappledebate.com",
     });
