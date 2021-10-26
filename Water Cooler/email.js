@@ -14,6 +14,6 @@ exports.send = (to) => {
         to,
         html: '<center><h1>Hey there!</h1><br><p1>Thanks again for contributing to this great debate! Click <a href="http://localhost:3000/results">here</a> to see what others think!</p1></center>',
         subject: "The Results Are In!",
-        from: "results@pineappledebate.com",
+        from: "results@pineapplesonpizzadebate.com",
     });
 }

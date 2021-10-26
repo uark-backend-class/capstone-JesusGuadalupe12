@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const routes = require("./routes");
 const exphbs = require("express-handlebars");
@@ -13,7 +14,7 @@ app.use(express.urlencoded()); // This takes data from the form on the question.
 app.use(express.static("./public")); // creates a main.css route within the ./public folder. 
 app.use(routes);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log("Now listening on port 3000");
 });
 
