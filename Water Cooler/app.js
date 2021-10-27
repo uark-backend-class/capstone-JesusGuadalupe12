@@ -14,6 +14,8 @@ app.use(express.urlencoded()); // This takes data from the form on the question.
 app.use(express.static("./public")); // creates a main.css route within the ./public folder. 
 app.use(routes);
 
+app.set('views', __dirname + '/views/');
+
 app.listen(process.env.PORT, () => {
     console.log("Now listening on port 3000");
 });
